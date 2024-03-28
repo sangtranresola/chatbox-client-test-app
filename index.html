@@ -10,5 +10,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.__DECA_CLIENT__.chat.load({
+              url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hswk8nvf6mpdzhqff8nj3gkj.json'
+            });
+          }
+          v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+    
   </body>
 </html>
