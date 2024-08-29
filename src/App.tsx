@@ -1,10 +1,10 @@
 import './App.css'
-import { DateTime } from 'luxon';
-import Highlighter from "react-highlight-words";
+// import { DateTime } from 'luxon';
+// import Highlighter from "react-highlight-words";
 import root from "react-shadow";
 
-const wordsSample = ["tom", "lip", "the", "is", "aka", "loepc", "qoeir", "ac"];
-const textSample = `This is a sample paragraph containing the word we want to find.  tebefvw wdg sdwtv`
+// const wordsSample = ["tom", "lip", "the", "is", "aka", "loepc", "qoeir", "ac"];
+// const textSample = `This is a sample paragraph containing the word we want to find.  tebefvw wdg sdwtv`
 const contentRaw = `test link::: <a href=\"https://www.google.com\" rel=\"noopener noreferrer nofollow\">demolink</a>`
 
 declare global {
@@ -13,56 +13,56 @@ declare global {
   }
 }
 
-type HighLightTextProps = {
-  words: string[];
-  text: string;
-  className?: string;
-};
-const HighLightText = ({ words, text, className }: HighLightTextProps) => {
-  return (
-    <Highlighter
-      highlightClassName={className}
-      searchWords={words}
-      autoEscape={true}
-      textToHighlight={text}
-    />
-  )
-};
+// type HighLightTextProps = {
+//   words: string[];
+//   text: string;
+//   className?: string;
+// };
+// const HighLightText = ({ words, text, className }: HighLightTextProps) => {
+//   return (
+//     <Highlighter
+//       highlightClassName={className}
+//       searchWords={words}
+//       autoEscape={true}
+//       textToHighlight={text}
+//     />
+//   )
+// };
 
 function App() {
-  const basicFindWord =  (word, elementId) => {
-    const element = document.getElementById(elementId);
-    if (!element) return;
+  // const basicFindWord =  (word, elementId) => {
+  //   const element = document.getElementById(elementId);
+  //   if (!element) return;
 
-    const regex = new RegExp(`\\b${word}\\b`, 'gi');
-    element.innerHTML = element.textContent.replace(regex, match => `<span class="bg-red-500">${match}</span>`);
-  };
+  //   const regex = new RegExp(`\\b${word}\\b`, 'gi');
+  //   element.innerHTML = element.textContent.replace(regex, match => `<span class="bg-red-500">${match}</span>`);
+  // };
 
-  const doHighlightWord = (word, elementId) =>{
-    const element = document.getElementById(elementId);
-    if (!element) return;
+  // const doHighlightWord = (word, elementId) =>{
+  //   const element = document.getElementById(elementId);
+  //   if (!element) return;
 
-    const regex = new RegExp(`\\b(${word})\\b`, 'gi');
-    const content = element.innerHTML;
-    const matches = [...content.matchAll(regex)];
+  //   const regex = new RegExp(`\\b(${word})\\b`, 'gi');
+  //   const content = element.innerHTML;
+  //   const matches = [...content.matchAll(regex)];
 
-    element.innerHTML = content.replace(regex, '<span class="highlight">$1</span>');
+  //   element.innerHTML = content.replace(regex, '<span class="highlight">$1</span>');
 
-    const highlights = document.querySelectorAll('.highlight');
-    const coordinates = [];
+  //   const highlights = document.querySelectorAll('.highlight');
+  //   const coordinates = [];
 
-    highlights.forEach(highlight => {
-        const rect = highlight.getBoundingClientRect();
-        coordinates.push({
-            top: rect.top + window.scrollY,
-            left: rect.left + window.scrollX,
-            right: rect.right + window.scrollX,
-            bottom: rect.bottom + window.scrollY
-        });
-    });
+  //   highlights.forEach(highlight => {
+  //       const rect = highlight.getBoundingClientRect();
+  //       coordinates.push({
+  //           top: rect.top + window.scrollY,
+  //           left: rect.left + window.scrollX,
+  //           right: rect.right + window.scrollX,
+  //           bottom: rect.bottom + window.scrollY
+  //       });
+  //   });
 
-    console.log(coordinates);
-  }
+  //   console.log(coordinates);
+  // }
 
   const onToggleChatWindow = () => {
     console.log('toggle chatwindow');
@@ -72,8 +72,13 @@ function App() {
     // }
   };
 
+  const promptTest = () => {
+    window.prompt('Enter your name', 'Harry Potter');
+  };
+
   return (
     <>
+      <button onClick={promptTest}>PromptTest</button>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello world!
       </h1>
