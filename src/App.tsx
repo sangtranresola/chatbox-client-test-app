@@ -60,10 +60,13 @@ function App() {
     console.log(coordinates);
   }
 
+  const onToggleChatWindow = () => {
+    console.log('toggle chatwindow');
+    window.__DECA_CLIENT__.chat.toggleChatWindow();
+  };
+
   return (
     <>
-      <button onClick={() => doHighlightWord('qavw', 'hani')}>Find word</button>
-      <button onClick={() => basicFindWord('tom', 'hani')}>Find Basic Word</button>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello world!
       </h1>
@@ -82,12 +85,13 @@ function App() {
             <p className="remote-img"><img src="../images/remote002.png" /></p>
         </li>
       </ul>
-      <div id="hani">
-      </div>
       <root.div>
         <div dangerouslySetInnerHTML={{ __html: contentRaw }}></div>
       </root.div>
       <HighLightText words={wordsSample} text={textSample} />
+      <div>
+        <button className="text-4xl" onClick={onToggleChatWindow}>ToggleChatwindow</button>
+      </div>
     </>
   )
 }
