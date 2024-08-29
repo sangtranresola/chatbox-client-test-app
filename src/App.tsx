@@ -5,9 +5,13 @@ import root from "react-shadow";
 
 const wordsSample = ["tom", "lip", "the", "is", "aka", "loepc", "qoeir", "ac"];
 const textSample = `This is a sample paragraph containing the word we want to find.  tebefvw wdg sdwtv`
-
-
 const contentRaw = `test link::: <a href=\"https://www.google.com\" rel=\"noopener noreferrer nofollow\">demolink</a>`
+
+declare global {
+  interface Window {
+    __DECA_CLIENT__: any; // Replace 'any' with the appropriate type
+  }
+}
 
 type HighLightTextProps = {
   words: string[];
@@ -63,7 +67,9 @@ function App() {
   const onToggleChatWindow = () => {
     console.log('toggle chatwindow');
     window.open('https://www.google.com', '_blank');
-    // window.__DECA_CLIENT__.chat.toggleChatWindow();
+    // if (window.__DECA_CLIENT__) {
+    //   window.__DECA_CLIENT__.chat.toggleChatWindow();
+    // }
   };
 
   return (
@@ -90,8 +96,8 @@ function App() {
         <div dangerouslySetInnerHTML={{ __html: contentRaw }}></div>
       </root.div>
       <HighLightText words={wordsSample} text={textSample} />
-      <div>
-        <button className="text-4xl" onClick={onToggleChatWindow}>ToggleChatwindow</button>
+      <div className="text-4xl" onClick={onToggleChatWindow}>
+        ClickToggleWindow
       </div>
     </>
   )
