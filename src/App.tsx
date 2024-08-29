@@ -66,10 +66,9 @@ function App() {
 
   const onToggleChatWindow = () => {
     console.log('toggle chatwindow');
-    window.open('https://www.google.com', '_blank');
-    // if (window.__DECA_CLIENT__) {
-    //   window.__DECA_CLIENT__.chat.toggleChatWindow();
-    // }
+    if (window.__DECA_CLIENT__) {
+      window.__DECA_CLIENT__.chat.toggleChatWindow();
+    }
   };
 
   const promptTest = () => {
