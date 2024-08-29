@@ -95,7 +95,7 @@ function App() {
       <root.div>
         <div dangerouslySetInnerHTML={{ __html: contentRaw }}></div>
       </root.div>
-      <HighLightText words={wordsSample} text={textSample} />
+      {/* <HighLightText words={wordsSample} text={textSample} /> */}
       <div className="text-4xl" onClick={onToggleChatWindow}>
         ClickToggleWindow
       </div>
