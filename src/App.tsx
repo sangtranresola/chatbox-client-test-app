@@ -81,12 +81,12 @@ function App() {
 
   return (
     <>
-      <div className="text-4xl" onClick={onToggleChatWindow1}>
-        ToggleWindowChatWindow--1-yellow
+      <div onClick={onToggleChatWindow1}>
+        ToggleChatbox-1-yellow
       </div>
-      <button onClick={onToggleChatWindow2}>
-        ToggleWindowChatWindow--2-green
-      </button>
+      <div onClick={onToggleChatWindow2}>
+        ToggleChatbox-2-green
+      </div>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello world!
       </h1>
