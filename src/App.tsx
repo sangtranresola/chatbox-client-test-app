@@ -66,16 +66,21 @@ function App() {
 
 
   const onToggleChatWindow1 = () => {
-    console.log('toggle chatwindow1111');
-    if (window.__DECA_CLIENT__) {
-      window.__DECA_CLIENT__.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e');
+    const thisChatId = '01hwmc2d7fyenbb0cbxdf66f2x'
+    const thisChat = window[`__DECA_CLIENT__${thisChatId}`]
+    console.log('toggle chatwindow1', thisChat);
+    if (thisChat) {
+      thisChat.chat.toggleChatWindow(thisChatId);
     }
   };
 
-  const onToggleChatWindow2 = () => {
-    console.log('toggle chatwindo2222', window.__DECA_CLIENT__2);
-    if (window.__DECA_CLIENT__2) {
-      window.__DECA_CLIENT__2.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x');
+  const onToggleChatWindow2 = () => {    
+    const thisChatId = '01hz4dpn25es3kmvahskfzze9e'
+    const thisChat = window[`__DECA_CLIENT__${thisChatId}`]
+    console.log('toggle chatwindow2', thisChat);
+    if (thisChat) {
+      console.log('run chatwindow2', thisChat);
+      thisChat.chat.toggleChatWindow(thisChatId);
     }
   };
 
