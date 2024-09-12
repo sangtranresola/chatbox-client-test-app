@@ -64,20 +64,29 @@ function App() {
   //   console.log(coordinates);
   // }
 
-  const onToggleChatWindow = () => {
-    console.log('toggle chatwindow');
+
+  const onToggleChatWindow1 = () => {
+    console.log('toggle chatwindow1111');
     if (window.__DECA_CLIENT__) {
-      window.__DECA_CLIENT__.chat.toggleChatWindow();
+      window.__DECA_CLIENT__.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e');
     }
   };
 
-  const promptTest = () => {
-    window.prompt('Enter your name', 'Harry Potter');
+  const onToggleChatWindow2 = () => {
+    console.log('toggle chatwindo2222', window.__DECA_CLIENT__2);
+    if (window.__DECA_CLIENT__2) {
+      window.__DECA_CLIENT__2.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x');
+    }
   };
 
   return (
     <>
-      <button onClick={promptTest}>PromptTest</button>
+      <div className="text-4xl" onClick={onToggleChatWindow1}>
+        ToggleWindowChatWindow--1-yellow
+      </div>
+      <button onClick={onToggleChatWindow2}>
+        ToggleWindowChatWindow--2-green
+      </button>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello world!
       </h1>
@@ -99,10 +108,50 @@ function App() {
       <root.div>
         <div dangerouslySetInnerHTML={{ __html: contentRaw }}></div>
       </root.div>
-      {/* <HighLightText words={wordsSample} text={textSample} /> */}
-      <div className="text-4xl" onClick={onToggleChatWindow}>
-        ClickToggleWindow
-      </div>
+      <img src="https://picsum.photos/200/300" alt="random" />
+      <img src="https://picsum.photos/200/300" alt="random" />
+      <img src="https://picsum.photos/200/300" alt="random" />
+      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
+        Hello world!
+      </h1>
     </>
   )
 }
