@@ -66,22 +66,28 @@ function App() {
 
 
   const onToggleChatWindow1 = () => {
-    const thisChatId = '01hwmc2d7fyenbb0cbxdf66f2x'
-    const thisChat = window[`__DECA_CLIENT__${thisChatId}`]
-    console.log('toggle chatwindow1', thisChat);
-    if (thisChat) {
-      thisChat.chat.toggleChatWindow(thisChatId);
-    }
+    // const thisChatId = '01hwmc2d7fyenbb0cbxdf66f2x'
+    // const thisChat = window[`__DECA_CLIENT__${thisChatId}`]
+    // console.log('toggle chatwindow1', thisChat);
+    // if (thisChat) {
+    //   thisChat.chat.toggleChatWindow(thisChatId);
+    // }
+   window.__DECA_CLIENT__01hxapnpyz2ah0q21ptpm3z7kj.chat.toggleChatWindow('01hxapnpyz2ah0q21ptpm3z7kj')
+    // window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x');
   };
 
+  // onclick="window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x')"
+
   const onToggleChatWindow2 = () => {    
-    const thisChatId = '01hz4dpn25es3kmvahskfzze9e'
-    const thisChat = window[`__DECA_CLIENT__${thisChatId}`]
-    console.log('toggle chatwindow2', thisChat);
-    if (thisChat) {
-      console.log('run chatwindow2', thisChat);
-      thisChat.chat.toggleChatWindow(thisChatId);
-    }
+    // const thisChatId = '01hz4dpn25es3kmvahskfzze9e'
+    // const thisChat = window[`__DECA_CLIENT__${thisChatId}`]
+    // console.log('toggle chatwindow2', thisChat);
+    // if (thisChat) {
+    //   console.log('run chatwindow2', thisChat);
+    //   thisChat.chat.toggleChatWindow(thisChatId);
+    // }
+    window.__DECA_CLIENT__01j69k1ddvyx35xyc9zj1j19s8.chat.toggleChatWindow('01j69k1ddvyx35xyc9zj1j19s8');
+    // window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e');
   };
 
   return (
@@ -90,7 +96,7 @@ function App() {
         ToggleChatbox-1-yellow
       </div>
       <div onClick={onToggleChatWindow2}>
-        ToggleChatbox-2-green
+        ToggleChatbox-2-black
       </div>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello world!

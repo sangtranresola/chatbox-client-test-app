@@ -9,41 +9,88 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
 
+    <!-- <script type="module">
+      import { chat } from 'https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs';
+      chat.load({
+        url: 'https://cdn.deca.cloud/chatbox/01hgytm6gmhjja50dwv3pcjc3d/01j69k1ddvyx35xyc9zj1j19s8.json',
+        domId: '01j69k1ddvyx35xyc9zj1j19s8'
+      });
+      window.__DECA_CLIENT__01j69k1ddvyx35xyc9zj1j19s8 = { chat };
+  </script>
+
+<script type="module">
+  import { chat } from 'https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs';
+  chat.load({
+    url: 'https://cdn.deca.cloud/chatbox/01hgytm6gmhjja50dwv3pcjc3d/01hxapnpyz2ah0q21ptpm3z7kj.json',
+    domId: '01hxapnpyz2ah0q21ptpm3z7kj'
+  });
+  window.__DECA_CLIENT__01hxapnpyz2ah0q21ptpm3z7kj = { chat };
+</script> -->
+
+
+
+    <!-- New Script -->
     <script type="module">
-      import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs';
-      console.log('chat', chat);
+      // import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
       chat.load({
         url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
         domId: '01hz4dpn25es3kmvahskfzze9e'
       });
       window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e = { chat };
     </script>
-      <script type="module">
-        import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs';
-        chat.load({
-          url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
-          domId: '01hwmc2d7fyenbb0cbxdf66f2x'
-        });
-        window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x = { chat };
-      </script>
+
+  <!-- <script type="module">
+    import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+    // import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+    chat.load({
+      url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
+      domId: '01hwmc2d7fyenbb0cbxdf66f2x'
+    });
+    window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x = { chat };
+  </script> -->
+
+  
+
+    <!-- <script type="module">
+      import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+      chat.load({
+        url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
+        domId: '01hz4dpn25es3kmvahskfzze9e'
+      });
+      window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e = { chat };
+    </script> -->
+
+    <!-- <script type="module">
+      // import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+
+      chat.load({
+        url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
+        domId: '01hwmc2d7fyenbb0cbxdf66f2x'
+      });
+      window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x = { chat };
+    </script> -->
 
 
-    <!-- <script type="text/javascript">
-      (function(d, t) {
-          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          v.onload = function() {
-            window.__DECA_CLIENT__.chat.load({
-              url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
-              domId: '01hz4dpn25es3kmvahskfzze9e'
-              // url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json'
-            });
-          }
-          // v.src = "http://localhost:3000/dist-client - Copy/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-          v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-    </script>
-      <script type="text/javascript">
+  <!-- Old script -->
+  <!-- <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.__DECA_CLIENT__.chat.load({
+            url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
+            // domId: '01hwmc2d7fyenbb0cbxdf66f2x',
+          });
+        }
+        v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script> -->
+
+      <!-- <script type="text/javascript">
         (function(d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
             v.onload = function() {
@@ -52,34 +99,10 @@
                 domId: '01hwmc2d7fyenbb0cbxdf66f2x',
               });
             }
-            // v.src = "http://localhost:3000/dist-client/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-            v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            v.src = "http://localhost:8000/dist-client/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            // v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
           })(document, 'script');
-      </script> -->
-    <!-- <script type="text/javascript">
-      (function(d, t) {
-          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          v.onload = function() {
-            window.__DECA_CLIENT__.chat.load({
-              url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json'
-            });
-          }
-          v.src = "http://localhost:3000/dist-client/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-
-          // v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-      })(document, 'script');
-    </script> -->
-    <!-- <script type="text/javascript">
-      (function(d, t) {
-          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-          v.onload = function() {
-            window.__DECA_CLIENT__.chat.load({
-              url: 'https://cdn.deca.cloud/chatbox/01hgytm6gmhjja50dwv3pcjc3d/01hzpp85jfzc3p9c8wc6jsjpjz.json'
-            });
-          }
-          v.src = "https://cdn.deca.cloud/client/chatbox/main/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-      })(document, 'script');
-    </script> -->
+      </script>  -->
     <!-- <script type="text/javascript">
       (function(d, t) {
           var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -91,17 +114,7 @@
           v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
       })(document, 'script');
     </script>
-      <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.__DECA_CLIENT__.chat.load({
-                url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j1v7m60vv5gd377gg9dqrej9.json'
-              });
-            }
-            v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-      </script> -->
+   -->
 
   </body>
 </html>
