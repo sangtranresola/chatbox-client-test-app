@@ -6,12 +6,36 @@
     <link rel="icon" type="image/svg+xml" href="/chatbox-client-test-app/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbox Client</title>
-    <script type="module" crossorigin src="/chatbox-client-test-app/assets/index-B5sVYXU7.js"></script>
+    <script type="module" crossorigin src="/chatbox-client-test-app/assets/index-cGYcxoNf.js"></script>
     <link rel="stylesheet" crossorigin href="/chatbox-client-test-app/assets/index-Bj4hatWZ.css">
   </head>
   <body>
     <div id="root"></div>
 
+    <!-- Gakuei -->
+    <script type="text/javascript">
+      !function(t,e){
+          var c=t.createElement(e), t=t.getElementsByTagName(e)[0];
+          c.onload=function(){
+              window.__DECA_CLIENT__.chat.setVariable('city_no', '2');
+              window.__DECA_CLIENT__.chat.load({
+                  url: 'https://cdn.deca.cloud/chatbox/01hscr2tdja1q1kzkr55f4pp20/01hszeqvr92qs7sdvx6m80va0e.json'
+              });
+          };
+          c.src='https://cdn.deca.cloud/client/chatbox/main/chatbox.umd.js';
+          c.type='text/javascript';
+          t.parentNode.insertBefore(c,t);
+      }(document,'script');
+  </script>
+
+    <!-- <script type="module">
+        import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+        chat.load({
+          url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json',
+          domId: '01j2avstxrph1zkwgnp7whcr18'
+        });
+        window.__DECA_CLIENT__01j2avstxrph1zkwgnp7whcr18 = { chat };
+    </script> -->
   
     <!-- <script type="module">
       import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
@@ -145,7 +169,6 @@
         v.onload = function() {
           window.__DECA_CLIENT__.chat.load({
             url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
-            // domId: '01hwmc2d7fyenbb0cbxdf66f2x',
           });
         }
         v.src = "https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
