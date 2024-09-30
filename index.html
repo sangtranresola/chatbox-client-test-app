@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +10,75 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
+
+    <script type="module">
+        import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+        chat.load({
+          url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json',
+          domId: '01j2avstxrph1zkwgnp7whcr18'
+        });
+        window.__DECA_CLIENT__01j2avstxrph1zkwgnp7whcr18 = { chat };
+    </script>
+  
+    <!-- <script type="module">
+      import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+      // import { chat } from 'https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs';
+      chat.load({
+        url: 'https://cdn.deca.cloud/chatbox/01hgytm6gmhjja50dwv3pcjc3d/01hzpqt3gag6ssqfxryrzgnwy7.json',
+        domId: '01hzpqt3gag6ssqfxryrzgnwy7'
+      });
+      window.__DECA_CLIENT__01hzpqt3gag6ssqfxryrzgnwy7 = { chat };
+  </script> -->
+
+    <!-- Nitori--> 
+    <!-- <script type="module">
+      import { chat } from "https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs";
+      chat.load({
+          url: "https://cdn.deca.cloud/chatbox/01hw9f5xfjh6gfsrmr06bq14ae/01j8haqhenv4q6tg0ec28eawv9.json",
+          domId: "01j8haqhenv4q6tg0ec28eawv9",
+      });
+      window.__DECA_CLIENT__01j8haqhenv4q6tg0ec28eawv9 = { chat };
+  </script>
+
+        <script type="module">
+        import { chat } from "https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs";
+        chat.load({
+            url: "https://cdn.deca.cloud/chatbox/01hw9f5xfjh6gfsrmr06bq14ae/01j8havwgmhq7mkq8wrkxcvycx.json",
+            domId: "01j8havwgmhq7mkq8wrkxcvycx",
+        });
+        window.__DECA_CLIENT__01j8havwgmhq7mkq8wrkxcvycx = { chat };
+    </script> -->
+  <!-- PROD -->
+  <!-- <script type="module">
+      import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+      // import { chat } from 'https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs';
+      chat.load({
+        url: 'https://cdn.deca.cloud/chatbox/01hgytm6gmhjja50dwv3pcjc3d/01j19dwrdd4nhwey9661cvwbh1.json',
+        domId: '01j19dwrdd4nhwey9661cvwbh1'
+      });
+      window.__DECA_CLIENT__01j19dwrdd4nhwey9661cvwbh1 = { chat };
+  </script> -->
+
+  <!-- QA -->
+  <!-- <script type="module">
+    import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+    chat.load({
+      url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json',
+      domId: '01j2avstxrph1zkwgnp7whcr18'
+    });
+    window.__DECA_CLIENT__01j2avstxrph1zkwgnp7whcr18 = { chat };
+</script> -->
+
+
+  <!-- <script type="module">
+    import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+    chat.load({
+      url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01j4tr2kdh3jd9ctptn7tnn7ex.json',
+      domId: '01j4tr2kdh3jd9ctptn7tnn7ex'
+    });
+    window.__DECA_CLIENT__01j4tr2kdh3jd9ctptn7tnn7ex = { chat };
+</script> -->
+  
 
     <!-- <script type="module">
       import { chat } from 'https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs';
@@ -32,15 +101,15 @@
 
 
     <!-- New Script -->
-    <script type="module">
-      // import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
-      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+    <!-- <script type="module">
+      import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+      // import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
       chat.load({
         url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
         domId: '01hz4dpn25es3kmvahskfzze9e'
       });
       window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e = { chat };
-    </script>
+    </script> -->
 
   <!-- <script type="module">
     import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
@@ -56,7 +125,7 @@
 
     <!-- <script type="module">
       import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
-      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+      // import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
       chat.load({
         url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
         domId: '01hz4dpn25es3kmvahskfzze9e'
