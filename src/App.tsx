@@ -73,6 +73,7 @@ function App() {
     //   thisChat.chat.toggleChatWindow(thisChatId);
     // }
   //  window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e')
+  window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x')
   };
 
   // onclick="window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x')"
@@ -86,17 +87,17 @@ function App() {
     //   thisChat.chat.toggleChatWindow(thisChatId);
     // }
     // window.__DECA_CLIENT__01j69k1ddvyx35xyc9zj1j19s8.chat.toggleChatWindow('01j69k1ddvyx35xyc9zj1j19s8');
-    // window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e');
+    window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e');
   };
 
   return (
     <>
       <div onClick={onToggleChatWindowDEVCAT}>
-        ToggleChatbox
+        ToggleChatbox1
       </div>
-      {/* <div onClick={onToggleChatWindow2}>
-        ToggleChatbox-2-black
-      </div> */}
+      <div onClick={onToggleChatWindow2}>
+        ToggleChatbox2
+      </div>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello world!
       </h1>
