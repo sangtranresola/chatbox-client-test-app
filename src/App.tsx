@@ -100,7 +100,7 @@ function App() {
         ToggleChatbox2
       </div>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
+        Hello
       </h1>
       <ul className="list">
         <li className="list-item">
