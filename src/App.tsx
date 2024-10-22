@@ -73,7 +73,7 @@ function App() {
     //   thisChat.chat.toggleChatWindow(thisChatId);
     // }
   //  window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e')
-  window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x')
+  window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow()
   };
 
   // onclick="window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x')"
@@ -87,7 +87,8 @@ function App() {
     //   thisChat.chat.toggleChatWindow(thisChatId);
     // }
     // window.__DECA_CLIENT__01j69k1ddvyx35xyc9zj1j19s8.chat.toggleChatWindow('01j69k1ddvyx35xyc9zj1j19s8');
-    window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e');
+    window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e', '01hz4dpn25es3kmvahskfzze9e333');
+    console.log('toggle chatwindow2');
   };
 
   return (

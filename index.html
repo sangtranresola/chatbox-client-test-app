@@ -10,16 +10,137 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-
-         <script type="module">
-            import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
-            chat.load({
-              url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
-              domId: '01hwmc2d7fyenbb0cbxdf66f2x'
+    
+    <!-- <script type="module">
+      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+      window.__DECA_CLIENT__01j69jd9jqb00jhk4xnn85ts52 = { chat: chat.load({
+        url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01j69jd9jqb00jhk4xnn85ts52.json',
+        domId: '01j69jd9jqb00jhk4xnn85ts52'
+      })};
+  </script> -->
+  
+    
+    <script type="module">
+      // import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs';
+    import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+      
+      window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x = { chat: chat.load({
+        url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
+        domId: '01hwmc2d7fyenbb0cbxdf66f2x'
+      })};
+    </script>
+      
+    <!-- <script type="module">
+      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+            
+      window.__DECA_CLIENT__01j2avstxrph1zkwgnp7whcr18 = { chat: chat.load({
+        url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json',
+        domId: '01j2avstxrph1zkwgnp7whcr18'
+      })};
+  </script> -->
+  
+ <!-- <script type="text/javascript">
+    !function(t,e){
+        var c=t.createElement(e), t=t.getElementsByTagName(e)[0];
+        c.onload=function(){
+            var cwInstance = window.__DECA_CLIENT__.chat.load({
+                url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json'
+                                     
             });
-            window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x = { chat };
-          </script>
+            cwInstance.setVariable('city_no', '5000');
+            cwInstance.setVariable('sangtest', '00');
+        };
+        c.src='https://cdn.deca-dev.com/client/chatbox/develop/chatbox.umd.js'
+        c.type='text/javascript';
+        t.parentNode.insertBefore(c,t);
+    }(document,'script');
+  </script> -->
+  
+    <!-- <script type="text/javascript">
+      !function(t,e){
+          var c=t.createElement(e), t=t.getElementsByTagName(e)[0];
+          c.onload=function(){
+              window.__DECA_CLIENT__.chat.setVariable('city_no', '2');
+              window.__DECA_CLIENT__.chat.load({
+                  url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json'
+              });
+          };
+          c.src='https://cdn.deca.cloud/client/chatbox/main/chatbox.umd.js'
+          c.type='text/javascript';
+          t.parentNode.insertBefore(c,t);
+      }(document,'script');
+  </script> -->
+  
+  <!-- <script type="text/javascript">
+    !function(t,e){
+        var c=t.createElement(e), t=t.getElementsByTagName(e)[0];
+        c.onload=function(){
+            var cwInstance = window.__DECA_CLIENT__.chat.load({
+                // url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json'
+                url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
+                
+            });
+            cwInstance.setVariable('sang_test', '1234567890');
+            cwInstance.setVariable('city_no', '100');
+        };
+        c.src='http://localhost:8000/dist-client/chatbox.umd.js'
+        c.type='text/javascript';
+        t.parentNode.insertBefore(c,t);
+    }(document,'script');
+  </script> -->
+    
+  <!-- DEV - Kubo's Chatbox -->
+  
+    <!-- <script type="module">
+      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+      
+      window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x = { chat: chat.load({
+        url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
+        domId: '01hwmc2d7fyenbb0cbxdf66f2x'
+      })};
+  </script> -->
+  
+  <!-- DEV - Sang's Chatbox -->
+  <!-- <script type="module">
+    import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs'; // local
+    // import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+    // chat.load({
+    //   url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
+    //   domId: '01hz4dpn25es3kmvahskfzze9e'
+    // });
+    window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e = { chat: chat.load({
+      url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
+      domId: '01hz4dpn25es3kmvahskfzze9e'
+    })};
+  </script> -->
+  
+  <!-- DEV - Script QA -->
+    <!-- <script type="module">
+      // import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs';
+    import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+      
+      window.__DECA_CLIENT__01j2avstxrph1zkwgnp7whcr18 = { chat: chat.load({
+        url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json',
+        domId: '01j2avstxrph1zkwgnp7whcr18'
+      })};
+  </script> -->
 
+  <!-- Gakuei Test -->
+    <!-- <script type="text/javascript">
+      !function(t,e){
+          var c=t.createElement(e), t=t.getElementsByTagName(e)[0];
+          c.onload=function(){
+              var cwInstance = window.__DECA_CLIENT__.chat.load({
+                  url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json'
+              });
+              cwInstance.setVariable('city_no', '2');
+          };
+          c.src='http://localhost:8000/dist-client/chatbox.umd.js'
+          c.type='text/javascript';
+          t.parentNode.insertBefore(c,t);
+      }(document,'script');
+  </script> -->
+    
   </body>
 </html>
 
