@@ -11,16 +11,30 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- <script type="module">
-      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
-      window.__DECA_CLIENT__01j69jd9jqb00jhk4xnn85ts52 = { chat: chat.load({
-        url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01j69jd9jqb00jhk4xnn85ts52.json',
-        domId: '01j69jd9jqb00jhk4xnn85ts52'
-      })};
-  </script> -->
-  
+    <!-- <script type="text/javascript">
+      var newScript = document.createElement("script");
+      newScript.type = "module";
+      newScript.innerHTML = "\
+        import { chat } from 'https://cdn.deca.cloud/client/chatbox/main/chatbox.mjs'; \
+        window.__DECA_CLIENT__01j92pwe6fc9wby9bnkyr04mv9 = { chat: chat.load({ \
+          url: 'https://cdn.deca.cloud/chatbox/01j8p9zpacncym3jef2vqxg748/01j92pwe6fc9wby9bnkyr04mv9.json', \
+          domId: '01j92pwe6fc9wby9bnkyr04mv9' \
+        })}; \
+      ";
     
-    <script type="module">
+      newScript.onload = function(e) {
+        console.log('load success', e);
+      };
+    
+      newScript.onerror = function(e) {
+        console.log('load error', e);
+      };
+    
+      document.body.appendChild(newScript);
+    </script> -->
+    
+
+    <!-- <script type="module">
       // import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs';
     import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
       
@@ -28,16 +42,42 @@
         url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
         domId: '01hwmc2d7fyenbb0cbxdf66f2x'
       })};
-    </script>
+    </script>  -->
       
     <!-- <script type="module">
-      import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
+      import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs';
+      
+      // import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
             
       window.__DECA_CLIENT__01j2avstxrph1zkwgnp7whcr18 = { chat: chat.load({
         url: 'https://cdn.deca-dev.com/chatbox/01hycn80wvnb0te4rvhjry27v0/01j2avstxrph1zkwgnp7whcr18.json',
         domId: '01j2avstxrph1zkwgnp7whcr18'
       })};
-  </script> -->
+  </script>  -->
+   
+<!-- <script type="module">
+      import { chat } from 'http://localhost:8000/dist-client/chatbox.mjs';
+  
+  // import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+  window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e = { chat: chat.load({
+    url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hz4dpn25es3kmvahskfzze9e.json',
+    domId: '01hz4dpn25es3kmvahskfzze9e'
+  })};
+
+</script> -->
+
+<!-- <script type="module">
+  import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs';
+  window.__DECA_CLIENT__01jd3vv324x33hcy95fwm70rfq = { chat: chat.load({
+    url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01jd3vv324x33hcy95fwm70rfq.json',
+    domId: '01jd3vv324x33hcy95fwm70rfq'
+  })};
+</script> -->
+
+
+
+
+
   
  <!-- <script type="text/javascript">
     !function(t,e){
@@ -91,14 +131,14 @@
     
   <!-- DEV - Kubo's Chatbox -->
   
-    <!-- <script type="module">
+    <script type="module">
       import { chat } from 'https://cdn.deca-dev.com/client/chatbox/develop/chatbox.mjs'; // dev
       
       window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x = { chat: chat.load({
         url: 'https://cdn.deca-dev.com/chatbox/01haxd218s50f6yy4jf2f92fzf/01hwmc2d7fyenbb0cbxdf66f2x.json',
         domId: '01hwmc2d7fyenbb0cbxdf66f2x'
       })};
-  </script> -->
+  </script>
   
   <!-- DEV - Sang's Chatbox -->
   <!-- <script type="module">
@@ -135,7 +175,7 @@
               });
               cwInstance.setVariable('city_no', '2');
           };
-          c.src='http://localhost:8000/dist-client/chatbox.umd.js'
+          c.src='https://cdn.deca.cloud/client/chatbox/main/chatbox.umd.js';
           c.type='text/javascript';
           t.parentNode.insertBefore(c,t);
       }(document,'script');

@@ -73,7 +73,8 @@ function App() {
     //   thisChat.chat.toggleChatWindow(thisChatId);
     // }
   //  window.__DECA_CLIENT__01hz4dpn25es3kmvahskfzze9e.chat.toggleChatWindow('01hz4dpn25es3kmvahskfzze9e')
-  window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow()
+  // window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow()
+  window.__DECA_CLIENT__01j2avstxrph1zkwgnp7whcr18.chat.toggleChatWindow();
   };
 
   // onclick="window.__DECA_CLIENT__01hwmc2d7fyenbb0cbxdf66f2x.chat.toggleChatWindow('01hwmc2d7fyenbb0cbxdf66f2x')"
