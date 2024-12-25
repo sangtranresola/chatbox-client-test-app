@@ -101,7 +101,7 @@ function App() {
         ToggleChatbox2
       </div>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello
+        Hello World
       </h1>
       <ul className="list">
         <li className="list-item">
@@ -122,49 +122,6 @@ function App() {
         <div dangerouslySetInnerHTML={{ __html: contentRaw }}></div>
       </root.div>
       <img src="https://picsum.photos/200/300" alt="random" />
-      <img src="https://picsum.photos/200/300" alt="random" />
-      <img src="https://picsum.photos/200/300" alt="random" />
-      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>      <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
-        Hello world!
-      </h1>
     </>
   )
 }
