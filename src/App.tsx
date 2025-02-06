@@ -92,13 +92,20 @@ function App() {
     console.log('toggle chatwindow2');
   };
 
+  const triggerQA1= () => {
+    window.__DECA_CLIENT__01jewaj9mvg55djngcf8c3b3w6.chat.toggleChatWindow();
+  };
+
   return (
     <>
-      <div onClick={onToggleChatWindowDEVCAT}>
+      {/* <div onClick={onToggleChatWindowDEVCAT}>
         ToggleChatbox1
       </div>
       <div onClick={onToggleChatWindow2}>
         ToggleChatbox2
+      </div> */}
+      <div onClick={triggerQA1}>
+        Trigger QA 
       </div>
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello World
