@@ -104,9 +104,12 @@ function App() {
       <div onClick={onToggleChatWindow2}>
         ToggleChatbox2
       </div> */}
-      <div onClick={triggerQA1}>
-        Trigger QA 
-      </div>
+      <button
+        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        onClick={triggerQA1}>
+        OPEN QA ...f8c3b3w6 
+      </button>
+
       <h1 className="text-3xl font-bold underline border-red italic hover:not-italic">
         Hello World
       </h1>
